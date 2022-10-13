@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="linea_naranja"></div>
+  <div class="contenedor_logo">
+    <br>
+    <img class="logo" src="imagenes/logo_cabecera.png" alt="">
+    <br><br>
+  </div>
+  <div class="contenedor_blanco">
+    <br>
+    <h1>DÉJANOS CONOCERTE</h1>
+    <br>
+    <hr class="linea_roja">
+    <br>
+    <div class="contenedor_compartenos">
+      <h2>¡ Compártenos tu información !</h2>
+      <br>
+      <h3>Dejanos tus datos personales y nosotros nos comunicaremos contigo lo más pronto posible.</h3>
+      <br><br>
+      <Form action="enviar.php" name="formulario" method="post" enctype="multipart/form-data">
+        <div class="formulario1">
+          <input class="campos" type="text" placeholder="Nombre Completo *" id="nombre">
+          <br>
+          <input class="campos" type="email" placeholder="Correo Electronico *" id="correo">
+          <br>
+          <input class="campos" type="tel" maxlength="10" placeholder="Celular *" id="celular">
+          <br>
+          <input class="campos" type="text" placeholder="Ciudad">
+          <br>
+          <input class="campos" type="text" placeholder="Localidad">
+        </div>
+        <div class="formulario2">
+          <input class="campos" type="text" name="" id="" placeholder="Estado">
+          <br>
+          <input class="campos" type="text" name="" id="" placeholder="Colonia">
+          <br>
+          <select class="campo2" name="" id="">
+            <option value="">Elige tu área de interes</option>
+            <option value="Cajas">Cajas</option>
+            <option value="Servicios">Servicios</option>
+            <option value="Asesoramiento Financiero">Asesoramiento Financiero</option>
+            <option value="Gestoría y Cobranza">Gestoría y Cobranza</option>
+            <option value="Crédito">Crédito</option>
+            <option value="Jurídico">Jurídico</option>
+            <option value="Archivo">Archivo</option>
+            <option value="Mercadotecnia">Mercadotecnia</option>
+            <option value="Diligencias">Diligencias</option>
+            <option value="Compras">Compras</option>
+            <option value="Intendencia">Intendencia</option>
+            <option value="Auditoría">Auditoría</option>
+            <option value="Capital Humano">Capital Humano</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+            <option value="Sistemas">Sistemas</option>
+            <option value="Contabilidad">Contabilidad</option>
+            <option value="Administración">Administración</option>
+          </select>
+          <br>
+          <h3>Sube tu Curriculum en formato PDF <span>( no exceder de 5MB )<img class="logo_pdf" src="imagenes/icono_pdf.png" alt=""></span></h3>
+          <input class="campo3" type="file" name="" id="">
+          <br><br>
+          <input id="boton" class="btn_enviar" type="button" value="Enviar" onclick="valida_formulario()">
+        </div>
+      </Form>
+      <br><br><br>
+    </div>
+  </div>
+  <br>
+  <div class="contenedor_alumno">
+    <br><br>
+    <h1>Geovanny Alejandro Ac Kuk</h1>
+    <h1>7SB</h1>
+    <h1>Programación Web</h1>
+    <br><br>
+  </div>
+  <!-- Funciones de javascript -->
+  <script>
+    function valida_formulario() {
+      if(document.getElementById("nombre").value.length == 0){
+        alert("Por favor, escribe tu nombre completo")
+        document.getElementById("nombre").focus()
+        return 0;
+      }
+      if(document.getElementById("correo").value.length == 0){
+        alert("Por favor, escribe tu correo electrónico correctamente")
+        document.getElementById("correo").focus()
+        return 0;
+      }
+      if(document.getElementById("celular").value.length == 0){
+        alert("Por favor, escribe tu número celular completo")
+        document.getElementById("celular").focus()
+        return 0;
+      }
+      document.formulario.submit();
+    }
+  </script>
+</body>
+</html>

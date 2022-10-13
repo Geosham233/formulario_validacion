@@ -1,0 +1,121 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 17px;
+  line-height: 25px;
+  color: #333;
+}
+
+.linea_naranja{
+  background-color: #ea970d;
+  height: 25px;
+}
+.contenedor_logo{
+  text-align: center;
+  background-color: #041237;
+}
+.logo{
+  width: 230px;
+}
+.contenedor_blanco{
+  text-align: center;
+}
+.contenedor_blanco h1{
+  color: #037194;
+  margin: 0%;
+  padding: 0%;
+}
+.linea_roja{
+  background-color: red;
+  width: 80px;
+  height: 6px;
+  text-align: center;
+  margin: auto;
+}
+.contenedor_compartenos{
+  max-width: 1470px;
+  border: 3px cadetblue solid;
+  border-radius: 10px;
+  margin: auto;
+}
+.contenedor_compartenos h2{
+  color: #e78e03;
+  margin-top: 10px;
+  font-size: 32px;
+}
+.contenedor_compartenos h3{
+  font-size: 26px;
+}
+.formulario1{
+  width: 700px;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.campos{
+  width: 685px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 1px #cecece solid;
+}
+.campo2{
+  width: 685px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 2px #037194 solid;
+}
+.campo3{
+  width: 685px;
+  height: 40px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px #cecece solid;
+}
+.btn_enviar{
+  width: 710px;
+  height: 40px;
+  background-color: #c51110;
+  border: 1px #c51110 solid;
+  color: white;
+  border-radius: 40px;
+  font-size: 17px;
+}
+.formulario2{
+  width: 720px;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  line-height: 42px;
+}
+.formulario2 h3{
+  color: #04698e;
+  margin-left: 10px;
+}
+.formulario2 span{
+  font-size: 15px;
+}
+.logo_pdf{
+  width: 30px;
+  vertical-align: bottom;
+}
+.contenedor_alumno{
+  background-color: #041237;
+  text-align: center;
+}
+.contenedor_alumno h1{
+  color: white;
+  line-height: 40px;
+}
